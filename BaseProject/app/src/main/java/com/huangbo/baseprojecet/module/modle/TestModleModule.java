@@ -3,6 +3,7 @@ package com.huangbo.baseprojecet.module.modle;
 import com.huangbo.baseprojecet.bean.LocationBean;
 import com.huangbo.baseprojecet.http.MineService;
 import com.huangbo.baseprojecet.imple.TestModleImple;
+import com.huangbo.baseprojecet.modle.TestModle;
 import com.huangbo.baseprojecet.view.TestView;
 
 import javax.inject.Singleton;
@@ -19,7 +20,7 @@ public class TestModleModule {
 
     @Singleton
     @Provides
-    TestModleImple ProbidesTest(MineService mService, TestView<LocationBean> mView) {
-        return new TestModleImple(mService, mView);
+    TestModle ProbidesTest(MineService mService, TestView<LocationBean> mView) {
+        return new TestModle(mService, mView);
     }
 }

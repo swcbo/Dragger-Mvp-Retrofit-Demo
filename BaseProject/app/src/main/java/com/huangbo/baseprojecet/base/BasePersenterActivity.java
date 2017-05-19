@@ -13,6 +13,6 @@ public class BasePersenterActivity<T extends BasePersenter> extends BaseActivity
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mPersenter.mModuleImpl.detachPersenter();
+        mPersenter.mMoudle.detachPersenter();
     }
 }

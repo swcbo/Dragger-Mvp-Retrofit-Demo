@@ -13,15 +13,15 @@ import rx.subscriptions.CompositeSubscription;
  * 默认persenter
  */
 
-public class BasePersenter<T, K extends BaseModleImple> {
+public class BasePersenter<T, K extends BaseModle> {
     public MineService mService;
     public T mView;
-    public K mModuleImpl;
+    public K mMoudle;
 
-    public BasePersenter(MineService mService, T mView, K mModuleImpl) {
+    public BasePersenter(MineService mService, T mView, K BaseModle) {
         this.mService = mService;
         this.mView = mView;
-        this.mModuleImpl = mModuleImpl;
+        this.mMoudle = BaseModle;
     }
 
 

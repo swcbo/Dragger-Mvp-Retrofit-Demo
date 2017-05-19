@@ -12,13 +12,13 @@ import rx.subscriptions.CompositeSubscription;
  * Created by huangb on 2017/5/11.
  */
 
-public class BaseModleImple<T> {
+public class BaseModle<T> {
 
     public MineService mService;
     public T mView;
     private CompositeSubscription mCompositeSubscription;
 
-    public BaseModleImple(MineService mService, T mView) {
+    public BaseModle(MineService mService, T mView) {
         this.mService = mService;
         this.mView = mView;
     }
