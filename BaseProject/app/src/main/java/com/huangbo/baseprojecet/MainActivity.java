@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 import com.huangbo.baseprojecet.base.BasePersenterActivity;
 import com.huangbo.baseprojecet.bean.LocationBean;
@@ -25,6 +26,7 @@ public class MainActivity extends BasePersenterActivity<MainPersenter> implement
         findViewById(R.id.button).setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, TestActiviyu.class))
         );
+        Toast.makeText(this,"test",Toast.LENGTH_LONG).show();
 
 
     }
